@@ -39,7 +39,7 @@ describe("NvidiaPlugin", () => {
       yield* addPlugin()
       expect((yield* catalog.provider.get(ProviderV2.ID.make("nvidia")))?.request.headers).toEqual({
         Existing: "value",
-        "HTTP-Referer": "https://github.com/neuralbroker/bugbee/",
+        "HTTP-Referer": "https://github.com/sajadinmaker/bugbee/",
         "X-Title": "bugbee",
         "X-BILLING-INVOKE-ORIGIN": "Bugbee",
       })
@@ -62,7 +62,7 @@ describe("NvidiaPlugin", () => {
       yield* addPlugin()
 
       expect((yield* catalog.provider.get(ProviderV2.ID.make("nvidia")))?.request.headers).toEqual({
-        "HTTP-Referer": "https://github.com/neuralbroker/bugbee/",
+        "HTTP-Referer": "https://github.com/sajadinmaker/bugbee/",
         "X-Title": "bugbee",
         "X-BILLING-INVOKE-ORIGIN": "Bugbee",
       })
@@ -88,7 +88,7 @@ describe("NvidiaPlugin", () => {
       yield* addPlugin()
 
       expect((yield* catalog.provider.get(ProviderV2.ID.make("nvidia")))?.request.headers).toEqual({
-        "HTTP-Referer": "https://github.com/neuralbroker/bugbee/",
+        "HTTP-Referer": "https://github.com/sajadinmaker/bugbee/",
         "X-Title": "bugbee",
         "X-BILLING-INVOKE-ORIGIN": "CustomOrigin",
       })

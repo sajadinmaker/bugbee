@@ -59,7 +59,7 @@ function model(input: {
     providerID: "bugbee",
     api: {
       id: "bugbee",
-      url: "https://github.com/neuralbroker/bugbee",
+      url: "https://github.com/sajadinmaker/bugbee",
       npm: "@ai-sdk/openai-compatible",
     },
     name: input.name,

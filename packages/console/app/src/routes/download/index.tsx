@@ -120,7 +120,7 @@ export default function Download() {
             <div data-component="section-content">
               <button
                 data-component="cli-row"
-                onClick={handleCopyClick("curl -fsSL https://github.com/neuralbroker/bugbee/install | bash")}
+                onClick={handleCopyClick("curl -fsSL https://github.com/sajadinmaker/bugbee/install | bash")}
               >
                 <code>
                   curl -fsSL https://<strong>bugbee.dev/install</strong> | bash
@@ -139,9 +139,9 @@ export default function Download() {
                 </code>
                 <CopyStatus />
               </button>
-              <button data-component="cli-row" onClick={handleCopyClick("brew install neuralbroker/tap/bugbee")}>
+              <button data-component="cli-row" onClick={handleCopyClick("brew install sajadinmaker/tap/bugbee")}>
                 <code>
-                  brew install <strong>neuralbroker/tap/bugbee</strong>
+                  brew install <strong>sajadinmaker/tap/bugbee</strong>
                 </code>
                 <CopyStatus />
               </button>

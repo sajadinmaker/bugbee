@@ -31,7 +31,7 @@ export async function GET({ params: { platform, channel } }: APIEvent) {
   if (!assetName) return new Response(null, { status: 404 })
 
   const resp = await fetch(
-    `https://github.com/neuralbroker/${channel === "stable" ? "bugbee" : "bugbee-beta"}/releases/latest/download/${assetName}`,
+    `https://github.com/sajadinmaker/${channel === "stable" ? "bugbee" : "bugbee-beta"}/releases/latest/download/${assetName}`,
   )
 
   const downloadName = downloadNames[platform]

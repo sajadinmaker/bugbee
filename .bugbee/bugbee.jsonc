@@ -1,5 +1,5 @@
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "provider": {},
   "permission": {},
   "references": {

@@ -13,7 +13,7 @@ bugbee hem **JSON** hem de **JSONC** (JSON Yorumlarla birlikte) formatlarını d
 
 ```jsonc title="bugbee.jsonc"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   // Theme configuration
   "theme": "bugbee",
   "model": "anthropic/claude-sonnet-4-5",
@@ -146,7 +146,7 @@ bugbee run "Hello world"
 
 ## Şema
 
-Yapılandırma dosyası [**`bugbee.dev/config.json`**](https://github.com/neuralbroker/bugbee/config.json)'da tanımlanan bir şemaya sahiptir.
+Yapılandırma dosyası [**`bugbee.dev/config.json`**](https://github.com/sajadinmaker/bugbee/config.json)'da tanımlanan bir şemaya sahiptir.
 
 Editörünüz şemaya göre doğrulama ve otomatik tamamlama yapabilmelidir.
 
@@ -158,7 +158,7 @@ TUI'ye özgü ayarları `tui` seçeneği aracılığıyla yapılandırabilirsini
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "tui": {
     "scroll_speed": 3,
     "scroll_acceleration": {
@@ -185,7 +185,7 @@ Mevcut seçenekler:
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "server": {
     "port": 4096,
     "hostname": "0.0.0.0",
@@ -214,7 +214,7 @@ Bir LLM'nin kullanabileceği araçları `tools` seçeneği aracılığıyla yön
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "tools": {
     "write": false,
     "bash": false
@@ -232,7 +232,7 @@ bugbee yapılandırmanızda kullanmak istediğiniz sağlayıcıları ve modeller
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "provider": {},
   "model": "anthropic/claude-sonnet-4-5",
   "small_model": "anthropic/claude-haiku-4-5"
@@ -245,7 +245,7 @@ Sağlayıcı seçenekleri `timeout` ve `setCacheKey` içerebilir:
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "provider": {
     "anthropic": {
       "options": {
@@ -274,7 +274,7 @@ Amazon Bedrock, AWS'a özgü yapılandırmayı destekler:
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "provider": {
     "amazon-bedrock": {
       "options": {
@@ -305,7 +305,7 @@ bugbee yapılandırmanızda kullanmak istediğiniz temayı `theme` seçeneği ar
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "theme": ""
 }
 ```
@@ -320,7 +320,7 @@ bugbee yapılandırmanızda kullanmak istediğiniz temayı `theme` seçeneği ar
 
 ```jsonc title="bugbee.jsonc"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "agent": {
     "code-reviewer": {
       "description": "Reviews code for best practices and potential issues",
@@ -347,7 +347,7 @@ Agent'ları `~/.config/bugbee/agents/` veya `.bugbee/agents/` içindeki Markdown
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "default_agent": "plan"
 }
 ```
@@ -364,7 +364,7 @@ Bu ayar tüm arayüzler için geçerlidir: TUI, CLI (`bugbee run`), masaüstü u
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "share": "manual"
 }
 ```
@@ -385,7 +385,7 @@ Varsayılan olarak paylaşım, `/share` komutunu kullanarak konuşmaları açık
 
 ```jsonc title="bugbee.jsonc"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "command": {
     "test": {
       "template": "Run the full test suite with coverage report and show any failures.\nFocus on the failing tests and suggest fixes.",
@@ -411,7 +411,7 @@ Tuş atamalarınızı `keybinds` seçeneği aracılığıyla özelleştirebilirs
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "keybinds": {}
 }
 ```
@@ -426,7 +426,7 @@ bugbee başlatıldığında yeni güncellemeleri otomatik olarak indirecektir. B
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "autoupdate": false
 }
 ```
@@ -442,7 +442,7 @@ Kod formatlayıcılarını `formatter` seçeneği aracılığıyla yapılandıra
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "formatter": {
     "prettier": {
       "disabled": true
@@ -470,7 +470,7 @@ Varsayılan olarak, bugbee açık bir onay gerektirmeden **tüm işlemlere izin 
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "permission": {
     "edit": "ask",
     "bash": "ask"
@@ -488,7 +488,7 @@ Bağlam sıkıştırma davranışını `compaction` seçeneği aracılığıyla 
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "compaction": {
     "auto": true,
     "prune": false,
@@ -509,7 +509,7 @@ Dosya izleyicinin yok sayma kalıplarını `watcher` seçeneği aracılığıyla
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "watcher": {
     "ignore": ["node_modules/**", "dist/**", ".git/**"]
   }
@@ -526,7 +526,7 @@ Kullanmak istediğiniz MCP sunucularını `mcp` seçeneği aracılığıyla yap�
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "mcp": {}
 }
 ```
@@ -543,7 +543,7 @@ Eklenti dosyalarını `.bugbee/plugins/` veya `~/.config/bugbee/plugins/` içine
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "plugin": ["bugbee-helicone-session", "@my-org/custom-plugin"]
 }
 ```
@@ -558,7 +558,7 @@ Kullandığınız modele ilişkin talimatları `instructions` seçeneği aracıl
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "instructions": ["CONTRIBUTING.md", "docs/guidelines.md", ".cursor/rules/*.md"]
 }
 ```
@@ -573,7 +573,7 @@ Bu, talimat dosyalarına giden bir dizi yolu ve glob desenini alır. [Kurallar h
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "disabled_providers": ["openai", "gemini"]
 }
 ```
@@ -596,7 +596,7 @@ Bu, talimat dosyalarına giden bir dizi yolu ve glob desenini alır. [Kurallar h
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "enabled_providers": ["anthropic", "openai"]
 }
 ```
@@ -617,7 +617,7 @@ Bir sağlayıcı hem `enabled_providers` hem de `disabled_providers`'de görün�
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "experimental": {}
 }
 ```
@@ -640,7 +640,7 @@ Ortam değişkenlerini değiştirmek için `{env:VARIABLE_NAME}` kullanın:
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "model": "{env:BUGBEE_MODEL}",
   "provider": {
     "anthropic": {
@@ -663,7 +663,7 @@ Bir dosyanın biçimini değiştirmek için `{file:path/to/file}` kullanın:
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "instructions": ["./custom-instructions.md"],
   "provider": {
     "openai": {

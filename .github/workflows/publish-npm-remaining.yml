@@ -17,7 +17,7 @@ permissions:
 
 jobs:
   publish:
-    if: github.repository == 'neuralbroker/bugbee'
+    if: github.repository == 'sajadinmaker/bugbee'
     runs-on: ubuntu-latest
     timeout-minutes: 90
     steps:

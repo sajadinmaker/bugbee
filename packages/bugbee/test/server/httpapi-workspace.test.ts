@@ -399,7 +399,7 @@ describe("workspace HttpApi", () => {
             "content-type": "application/json",
             "x-bugbee-workspace": "internal",
           },
-          body: JSON.stringify({ $schema: "https://github.com/neuralbroker/bugbee/config.json" }),
+          body: JSON.stringify({ $schema: "https://github.com/sajadinmaker/bugbee/config.json" }),
         })
 
         const responseBody = yield* response.text
@@ -416,7 +416,7 @@ describe("workspace HttpApi", () => {
               "content-type": "application/json",
               "x-target-auth": "secret",
             }),
-            body: JSON.stringify({ $schema: "https://github.com/neuralbroker/bugbee/config.json" }),
+            body: JSON.stringify({ $schema: "https://github.com/sajadinmaker/bugbee/config.json" }),
           },
         ])
         expect(forwarded[0]?.headers).not.toHaveProperty("x-bugbee-directory")

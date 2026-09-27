@@ -145,7 +145,7 @@ export function modelVariants(output: string, model: string) {
 
 export function translationConfig(agent: string, model: string, targets: string[]) {
   return {
-    $schema: "https://github.com/neuralbroker/bugbee/config.json",
+    $schema: "https://github.com/sajadinmaker/bugbee/config.json",
     model,
     default_agent: agent,
     share: "disabled" as const,

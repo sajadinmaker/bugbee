@@ -62,7 +62,7 @@ Puoi personalizzare i formattatori nella sezione `formatter` della config di Bug
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "formatter": {}
 }
 ```
@@ -86,7 +86,7 @@ Per disabilitare **tutti** i formattatori globalmente, imposta `formatter` a `fa
 
 ```json title="bugbee.json" {3}
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "formatter": false
 }
 ```
@@ -95,7 +95,7 @@ Per disabilitare un formattatore **specifico**, imposta `disabled` a `true`:
 
 ```json title="bugbee.json" {5}
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "formatter": {
     "prettier": {
       "disabled": true
@@ -112,7 +112,7 @@ Puoi sovrascrivere i formattatori integrati o aggiungerne di nuovi specificando 
 
 ```json title="bugbee.json" {4-14}
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "formatter": {
     "prettier": {
       "command": ["npx", "prettier", "--write", "$FILE"],

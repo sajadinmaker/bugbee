@@ -46,7 +46,7 @@ Provide the team that should own the issue. This tool picks a random assignee fr
   },
   async execute(args) {
     const issue = getIssueNumber()
-    const owner = "neuralbroker"
+    const owner = "sajadinmaker"
     const repo = "bugbee"
     const assignee = pick(TEAM[args.team])
 

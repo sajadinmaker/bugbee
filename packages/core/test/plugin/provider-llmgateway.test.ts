@@ -46,7 +46,7 @@ describe("LLMGatewayPlugin", () => {
       yield* addPlugin()
       expect((yield* catalog.provider.get(ProviderV2.ID.make("llmgateway")))?.request.headers).toEqual({
         Existing: "value",
-        "HTTP-Referer": "https://github.com/neuralbroker/bugbee/",
+        "HTTP-Referer": "https://github.com/sajadinmaker/bugbee/",
         "X-Title": "bugbee",
         "X-Source": "bugbee",
       })

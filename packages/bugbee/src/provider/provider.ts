@@ -458,7 +458,7 @@ function custom(dep: CustomDep): Record<string, CustomLoader> {
         autoload: false,
         options: {
           headers: {
-            "HTTP-Referer": "https://github.com/neuralbroker/bugbee/",
+            "HTTP-Referer": "https://github.com/sajadinmaker/bugbee/",
             "X-Title": "bugbee",
             "X-Source": "bugbee",
           },
@@ -469,7 +469,7 @@ function custom(dep: CustomDep): Record<string, CustomLoader> {
         autoload: false,
         options: {
           headers: {
-            "HTTP-Referer": "https://github.com/neuralbroker/bugbee/",
+            "HTTP-Referer": "https://github.com/sajadinmaker/bugbee/",
             "X-Title": "bugbee",
           },
         },
@@ -479,7 +479,7 @@ function custom(dep: CustomDep): Record<string, CustomLoader> {
         autoload: provider.source === "config",
         options: {
           headers: {
-            "HTTP-Referer": "https://github.com/neuralbroker/bugbee/",
+            "HTTP-Referer": "https://github.com/sajadinmaker/bugbee/",
             "X-Title": "bugbee",
             "X-BILLING-INVOKE-ORIGIN": "Bugbee",
           },
@@ -490,7 +490,7 @@ function custom(dep: CustomDep): Record<string, CustomLoader> {
         autoload: false,
         options: {
           headers: {
-            "http-referer": "https://github.com/neuralbroker/bugbee/",
+            "http-referer": "https://github.com/sajadinmaker/bugbee/",
             "x-title": "bugbee",
           },
         },
@@ -596,7 +596,7 @@ function custom(dep: CustomDep): Record<string, CustomLoader> {
         autoload: false,
         options: {
           headers: {
-            "HTTP-Referer": "https://github.com/neuralbroker/bugbee/",
+            "HTTP-Referer": "https://github.com/sajadinmaker/bugbee/",
             "X-Title": "bugbee",
           },
         },
@@ -854,7 +854,7 @@ function custom(dep: CustomDep): Record<string, CustomLoader> {
         autoload: false,
         options: {
           headers: {
-            "HTTP-Referer": "https://github.com/neuralbroker/bugbee/",
+            "HTTP-Referer": "https://github.com/sajadinmaker/bugbee/",
             "X-Title": "bugbee",
           },
         },

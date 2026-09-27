@@ -36,7 +36,7 @@ export const subjects = createSubjects({
 
 const MY_THEME: Theme = {
   ...THEME_OPENAUTH,
-  logo: "https://github.com/neuralbroker/bugbee/favicon-v3.svg",
+  logo: "https://github.com/sajadinmaker/bugbee/favicon-v3.svg",
 }
 
 export default {

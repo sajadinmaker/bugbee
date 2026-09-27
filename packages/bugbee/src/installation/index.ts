@@ -123,8 +123,8 @@ const layer: Layer.Layer<Service, never, HttpClient.HttpClient | AppProcess.Serv
     )
 
     const getBrewFormula = Effect.fnUntraced(function* () {
-      const tapFormula = yield* text(["brew", "list", "--formula", "neuralbroker/tap/bugbee"])
-      if (tapFormula.includes("bugbee")) return "neuralbroker/tap/bugbee"
+      const tapFormula = yield* text(["brew", "list", "--formula", "sajadinmaker/tap/bugbee"])
+      if (tapFormula.includes("bugbee")) return "sajadinmaker/tap/bugbee"
       const coreFormula = yield* text(["brew", "list", "--formula", "bugbee"])
       if (coreFormula.includes("bugbee")) return "bugbee"
       return "bugbee"
@@ -144,7 +144,7 @@ const layer: Layer.Layer<Service, never, HttpClient.HttpClient | AppProcess.Serv
 
     const upgradeCurl = Effect.fnUntraced(
       function* (target: string) {
-        const response = yield* httpOk.execute(HttpClientRequest.get("https://github.com/neuralbroker/bugbee/install"))
+        const response = yield* httpOk.execute(HttpClientRequest.get("https://github.com/sajadinmaker/bugbee/install"))
         const body = yield* response.text
         const bodyBytes = new TextEncoder().encode(body)
         const shell = yield* upgradeScriptShell()
@@ -254,7 +254,7 @@ const layer: Layer.Layer<Service, never, HttpClient.HttpClient | AppProcess.Serv
         }
 
         const response = yield* httpOk.execute(
-          HttpClientRequest.get("https://api.github.com/repos/neuralbroker/bugbee/releases/latest").pipe(
+          HttpClientRequest.get("https://api.github.com/repos/sajadinmaker/bugbee/releases/latest").pipe(
             HttpClientRequest.acceptJson,
           ),
         )
@@ -280,12 +280,12 @@ const layer: Layer.Layer<Service, never, HttpClient.HttpClient | AppProcess.Serv
             const formula = yield* getBrewFormula()
             const env = { HOMEBREW_NO_AUTO_UPDATE: "1" }
             if (formula.includes("/")) {
-              const tap = yield* run(["brew", "tap", "neuralbroker/tap"], { env })
+              const tap = yield* run(["brew", "tap", "sajadinmaker/tap"], { env })
               if (tap.code !== 0) {
                 upgradeResult = tap
                 break
               }
-              const repo = yield* text(["brew", "--repo", "neuralbroker/tap"])
+              const repo = yield* text(["brew", "--repo", "sajadinmaker/tap"])
               const dir = repo.trim()
               if (dir) {
                 const pull = yield* run(["git", "pull", "--ff-only"], { cwd: dir, env })

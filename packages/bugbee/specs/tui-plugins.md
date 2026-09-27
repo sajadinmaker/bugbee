@@ -18,7 +18,7 @@ Example:
 
 ```json
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/tui.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/tui.json",
   "theme": "smoke-theme",
   "leader_timeout": 2000,
   "keybinds": {

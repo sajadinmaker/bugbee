@@ -1,5 +1,5 @@
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/theme.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/theme.json",
   "defs": {
     "background100": "#0A0A0A",
     "background200": "#000000",

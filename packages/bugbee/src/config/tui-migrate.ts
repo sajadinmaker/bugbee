@@ -8,7 +8,7 @@ import { Global } from "@bugbee-ai/core/global"
 import { Filesystem } from "@/util/filesystem"
 import * as ConfigPaths from "@/config/paths"
 
-const TUI_SCHEMA_URL = "https://github.com/neuralbroker/bugbee/tui.json"
+const TUI_SCHEMA_URL = "https://github.com/sajadinmaker/bugbee/tui.json"
 
 const decodeTheme = Schema.decodeUnknownOption(Schema.String)
 const decodeRecord = Schema.decodeUnknownOption(Schema.Record(Schema.String, Schema.Unknown))

@@ -31,7 +31,7 @@ const onlyMissing = (process.env.BUGBEE_ONLY_MISSING ?? "1") === "1"
 const initialCooldownMs = Number(process.env.NPM_PUBLISH_COOLDOWN_MS ?? 60_000)
 const root = path.resolve(fileURLToPath(new URL("../../..", import.meta.url)))
 const work = path.join(root, "packages/bugbee/dist/remaining-publish")
-const base = `https://github.com/neuralbroker/bugbee/releases/download/v${version}`
+const base = `https://github.com/sajadinmaker/bugbee/releases/download/v${version}`
 const metaName = "@neuralbroker/bugbee"
 const scope = "@neuralbroker"
 
@@ -290,8 +290,8 @@ async function ensureMeta(deps: Record<string, string>) {
       {
         name: metaName,
         description: "Bugbee — open source AI coding agent",
-        repository: { type: "git", url: "https://github.com/neuralbroker/bugbee" },
-        homepage: "https://github.com/neuralbroker/bugbee",
+        repository: { type: "git", url: "https://github.com/sajadinmaker/bugbee" },
+        homepage: "https://github.com/sajadinmaker/bugbee",
         bin: { bugbee: "./bin/bugbee.exe" },
         scripts: { postinstall: "node ./postinstall.mjs" },
         version: metaVersion,

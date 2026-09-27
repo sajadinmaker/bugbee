@@ -105,7 +105,7 @@ for (const item of targets) {
         name: `@bugbee-ai/${name}`,
         version: Script.version,
         license: "MIT",
-        repository: { type: "git", url: "git+https://github.com/neuralbroker/bugbee.git" },
+        repository: { type: "git", url: "git+https://github.com/sajadinmaker/bugbee.git" },
         os: [item.os],
         cpu: [item.arch],
       },

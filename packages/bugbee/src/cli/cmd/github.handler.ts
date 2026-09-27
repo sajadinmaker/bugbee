@@ -200,7 +200,7 @@ export const githubInstall = Effect.fn("Cli.github.install")(function* () {
             "",
             "    3. Go to a GitHub issue and comment `/oc summarize` to see the agent in action",
             "",
-            "   Learn more about the GitHub agent - https://github.com/neuralbroker/bugbee/docs/github/#usage-examples",
+            "   Learn more about the GitHub agent - https://github.com/sajadinmaker/bugbee/docs/github/#usage-examples",
           ].join("\n"),
         )
       }
@@ -362,7 +362,7 @@ jobs:
           persist-credentials: false
 
       - name: Run bugbee
-        uses: neuralbroker/bugbee/github@latest${envStr}
+        uses: sajadinmaker/bugbee/github@latest${envStr}
         with:
           model: ${provider}/${model}`,
         )
@@ -426,7 +426,7 @@ export const githubRun = Effect.fn("Cli.github.run")(function* (args: { event?: 
         ? (payload as IssueCommentEvent | IssuesEvent).issue.number
         : (payload as PullRequestEvent | PullRequestReviewCommentEvent).pull_request.number
     const runUrl = `/${owner}/${repo}/actions/runs/${runId}`
-    const shareBaseUrl = isMock ? "https://dev.bugbee.ai" : "https://github.com/neuralbroker/bugbee"
+    const shareBaseUrl = isMock ? "https://dev.bugbee.ai" : "https://github.com/sajadinmaker/bugbee"
 
     let appToken: string
     let octoRest: Octokit

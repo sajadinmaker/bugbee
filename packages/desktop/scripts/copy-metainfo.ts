@@ -31,13 +31,13 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>
 
   <content_rating type="oars-1.1" />
 
-  <url type="bugtracker">https://github.com/neuralbroker/bugbee/issues</url>
-  <url type="homepage">https://github.com/neuralbroker/bugbee</url>
-  <url type="vcs-browser">https://github.com/neuralbroker/bugbee</url>
+  <url type="bugtracker">https://github.com/sajadinmaker/bugbee/issues</url>
+  <url type="homepage">https://github.com/sajadinmaker/bugbee</url>
+  <url type="vcs-browser">https://github.com/sajadinmaker/bugbee</url>
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/neuralbroker/bugbee/b75d4d1c5ec449585d515c756fc81f080a157a9a/packages/web/src/assets/lander/screenshot.png</image>
+      <image>https://raw.githubusercontent.com/sajadinmaker/bugbee/b75d4d1c5ec449585d515c756fc81f080a157a9a/packages/web/src/assets/lander/screenshot.png</image>
     </screenshot>
   </screenshots>
 </component>

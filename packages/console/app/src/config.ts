@@ -3,11 +3,11 @@
  */
 export const config = {
   // Base URL
-  baseUrl: "https://github.com/neuralbroker/bugbee",
+  baseUrl: "https://github.com/sajadinmaker/bugbee",
 
   // GitHub
   github: {
-    repoUrl: "https://github.com/neuralbroker/bugbee",
+    repoUrl: "https://github.com/sajadinmaker/bugbee",
     starsFormatted: {
       compact: "160K",
       full: "160,000",

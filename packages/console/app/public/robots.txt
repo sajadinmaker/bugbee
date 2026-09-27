@@ -5,5 +5,5 @@ Allow: /
 Disallow: /s/
 Disallow: /share/
 
-Sitemap: https://github.com/neuralbroker/bugbee/sitemap.xml
-Sitemap: https://github.com/neuralbroker/bugbee/data/sitemap.xml
+Sitemap: https://github.com/sajadinmaker/bugbee/sitemap.xml
+Sitemap: https://github.com/sajadinmaker/bugbee/data/sitemap.xml

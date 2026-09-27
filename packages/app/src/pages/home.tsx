@@ -678,7 +678,7 @@ export function NewHome() {
             clearNotifications={clearNotifications}
             unseenCount={unseenCount}
             openSettings={openSettings}
-            openHelp={() => platform.openLink("https://github.com/neuralbroker/bugbee/desktop-feedback")}
+            openHelp={() => platform.openLink("https://github.com/sajadinmaker/bugbee/desktop-feedback")}
             language={language}
             onWheel={(event) => {
               if (sessionViewport) containHomeWheel(event, sessionViewport)
@@ -785,7 +785,7 @@ export function NewHome() {
           <HomeUtilityNav
             class="flex lg:hidden"
             openSettings={openSettings}
-            openHelp={() => platform.openLink("https://github.com/neuralbroker/bugbee/desktop-feedback")}
+            openHelp={() => platform.openLink("https://github.com/sajadinmaker/bugbee/desktop-feedback")}
             language={language}
           />
         </div>

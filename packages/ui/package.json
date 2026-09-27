@@ -5,7 +5,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neuralbroker/bugbee.git",
+    "url": "git+https://github.com/sajadinmaker/bugbee.git",
     "directory": "packages/ui"
   },
   "publishConfig": {

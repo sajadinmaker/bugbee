@@ -26,7 +26,7 @@ jobs:
       - uses: ./.github/actions/setup-bun
 
       - name: Run bugbee
-        uses: neuralbroker/bugbee/github@2c14fc5586fe0b88e5c04732d2e846769cc35671 # latest
+        uses: sajadinmaker/bugbee/github@2c14fc5586fe0b88e5c04732d2e846769cc35671 # latest
         env:
           BUGBEE_API_KEY: ${{ secrets.BUGBEE_API_KEY }}
           BUGBEE_PERMISSION: '{"bash": "deny"}'

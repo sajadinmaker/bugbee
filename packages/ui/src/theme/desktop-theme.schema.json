@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://github.com/neuralbroker/bugbee/desktop-theme.json",
+  "$id": "https://github.com/sajadinmaker/bugbee/desktop-theme.json",
   "title": "Bugbee Desktop Theme",
   "description": "A theme definition for the Bugbee desktop application",
   "type": "object",

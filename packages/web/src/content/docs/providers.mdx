@@ -35,7 +35,7 @@ You can customize the base URL for any provider by setting the `baseURL` option.
 
 ```json title="bugbee.json" {6}
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "provider": {
     "anthropic": {
       "options": {
@@ -54,7 +54,7 @@ You can hide specific models from the `/models` picker for a provider using the 
 
 ```json title="bugbee.json" {6}
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "provider": {
     "anthropic": {
       "blacklist": ["claude-opus-4-20250514"]
@@ -67,7 +67,7 @@ The inverse `whitelist` option hides every model except the ones listed.
 
 ```json title="bugbee.json" {6}
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "provider": {
     "anthropic": {
       "whitelist": ["claude-sonnet-4-20250514"]
@@ -235,7 +235,7 @@ To use Amazon Bedrock with Bugbee:
 
    ```json title="bugbee.json"
    {
-     "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+     "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
      "provider": {
        "amazon-bedrock": {
          "options": {
@@ -264,7 +264,7 @@ To use Amazon Bedrock with Bugbee:
 
    ```json title="bugbee.json"
    {
-     "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+     "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
      "provider": {
        "amazon-bedrock": {
          "options": {
@@ -313,7 +313,7 @@ For custom inference profiles, use the model and provider name in the key and se
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "provider": {
     "amazon-bedrock": {
       // ...
@@ -376,7 +376,7 @@ You can configure bugbee to use local models through [Atomic Chat](https://atomi
 
 ```json title="bugbee.json" "atomic-chat" {5, 6, 8, 10-14}
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "provider": {
     "atomic-chat": {
       "npm": "@ai-sdk/openai-compatible",
@@ -609,7 +609,7 @@ Cloudflare AI Gateway lets you access models from OpenAI, Anthropic, Workers AI,
 
    ```json title="bugbee.json"
    {
-     "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+     "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
      "provider": {
        "cloudflare-ai-gateway": {
          "models": {
@@ -967,7 +967,7 @@ to only use your own GitLab-hosted instance, add the following to your
 
 ```json
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "small_model": "gitlab/duo-chat-haiku-4-5",
   "share": "disabled"
 }
@@ -1031,7 +1031,7 @@ Customize through `bugbee.json`:
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "provider": {
     "gitlab": {
       "options": {
@@ -1062,7 +1062,7 @@ To access GitLab tools (merge requests, issues, pipelines, CI/CD, etc.):
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "plugin": ["bugbee-gitlab-plugin"]
 }
 ```
@@ -1272,7 +1272,7 @@ Here's [Helicone's Model Directory](https://helicone.ai/models), you'll need thi
 
 ```jsonc title="~/.config/bugbee/bugbee.jsonc"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "provider": {
     "helicone": {
       "npm": "@ai-sdk/openai-compatible",
@@ -1300,7 +1300,7 @@ Helicone supports custom headers for features like caching, user tracking, and s
 
 ```jsonc title="~/.config/bugbee/bugbee.jsonc"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "provider": {
     "helicone": {
       "npm": "@ai-sdk/openai-compatible",
@@ -1354,7 +1354,7 @@ You can configure bugbee to use local models through [llama.cpp's](https://githu
 
 ```json title="bugbee.json" "llama.cpp" {5, 6, 8, 10-15}
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "provider": {
     "llama.cpp": {
       "npm": "@ai-sdk/openai-compatible",
@@ -1421,7 +1421,7 @@ You can configure bugbee to use local models through LM Studio.
 
 ```json title="bugbee.json" "lmstudio" {5, 6, 8, 10-14}
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "provider": {
     "lmstudio": {
       "npm": "@ai-sdk/openai-compatible",
@@ -1538,7 +1538,7 @@ You can also use NVIDIA models locally via [NVIDIA NIM](https://docs.nvidia.com/
 
 ```json title="bugbee.json" {6}
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "provider": {
     "nvidia": {
       "options": {
@@ -1596,7 +1596,7 @@ Ollama can automatically configure itself for Bugbee. See the [Ollama integratio
 
 ```json title="bugbee.json" "ollama" {5, 6, 8, 10-14}
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "provider": {
     "ollama": {
       "npm": "@ai-sdk/openai-compatible",
@@ -1758,7 +1758,7 @@ Bugbee Zen is a list of tested and verified models provided by the Bugbee team. 
 
    ```json title="bugbee.json" {6}
    {
-     "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+     "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
      "provider": {
        "openrouter": {
          "models": {
@@ -1773,7 +1773,7 @@ Bugbee Zen is a list of tested and verified models provided by the Bugbee team. 
 
    ```json title="bugbee.json"
    {
-     "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+     "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
      "provider": {
        "openrouter": {
          "models": {
@@ -1822,7 +1822,7 @@ Bugbee Zen is a list of tested and verified models provided by the Bugbee team. 
 
    ```json title="bugbee.json" {6}
    {
-     "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+     "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
      "provider": {
        "llmgateway": {
          "models": {
@@ -1837,7 +1837,7 @@ Bugbee Zen is a list of tested and verified models provided by the Bugbee team. 
 
    ```json title="bugbee.json"
    {
-     "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+     "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
      "provider": {
        "llmgateway": {
          "models": {
@@ -2100,7 +2100,7 @@ The model catalog is provided automatically. A minimal `bugbee.json` is all that
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "model": "snowflake-cortex/claude-sonnet-4-6",
   "small_model": "snowflake-cortex/claude-haiku-4-5"
 }
@@ -2193,7 +2193,7 @@ You can also customize models through your bugbee config. Here's an example of s
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "provider": {
     "vercel": {
       "models": {
@@ -2343,7 +2343,7 @@ Use this when Bugbee is running somewhere a browser can't reach the loopback red
 
    ```json title="bugbee.json" {6}
    {
-     "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+     "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
      "provider": {
        "zenmux": {
          "models": {
@@ -2411,7 +2411,7 @@ You can use any OpenAI-compatible provider with bugbee. Most modern AI providers
 
    ```json title="bugbee.json" ""myprovider"" {5-15}
    {
-     "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+     "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
      "provider": {
        "myprovider": {
          "npm": "@ai-sdk/openai-compatible",
@@ -2449,7 +2449,7 @@ Here's an example setting the `apiKey`, `headers`, and model `limit` options.
 
 ```json title="bugbee.json" {9,11,17-20}
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "provider": {
     "myprovider": {
       "npm": "@ai-sdk/openai-compatible",

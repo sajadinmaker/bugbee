@@ -38,7 +38,7 @@ describe("inlineCodeKind", () => {
   })
 
   test("detects urls", () => {
-    expect(inlineCodeKind(`https://github.com/neuralbroker/bugbee/docs`)).toBe("url")
+    expect(inlineCodeKind(`https://github.com/sajadinmaker/bugbee/docs`)).toBe("url")
     expect(inlineCodeKind(`http://localhost:4444`)).toBe("url")
     expect(inlineCodeKind(`file:///tmp/bugbee`)).toBeUndefined()
     expect(inlineCodeKind(`ftp://bugbee.dev/docs`)).toBeUndefined()

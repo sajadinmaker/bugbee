@@ -13,7 +13,7 @@ Bugbee รองรับทั้งรูปแบบ **JSON** และ **JSO
 
 ```jsonc title="bugbee.jsonc"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "model": "anthropic/claude-sonnet-4-5",
   "autoupdate": true,
   "server": {
@@ -151,9 +151,9 @@ bugbee run "Hello world"
 
 ## สคีมา
 
-ไฟล์กำหนดค่ามีสคีมาที่กำหนดไว้ใน [**`bugbee.dev/config.json`**](https://github.com/neuralbroker/bugbee/config.json)
+ไฟล์กำหนดค่ามีสคีมาที่กำหนดไว้ใน [**`bugbee.dev/config.json`**](https://github.com/sajadinmaker/bugbee/config.json)
 
-การกำหนดค่า TUI ใช้ [**`bugbee.dev/tui.json`**](https://github.com/neuralbroker/bugbee/tui.json)
+การกำหนดค่า TUI ใช้ [**`bugbee.dev/tui.json`**](https://github.com/sajadinmaker/bugbee/tui.json)
 
 ผู้แก้ไขของคุณควรสามารถตรวจสอบและเติมข้อความอัตโนมัติตามสคีมาได้
 
@@ -165,7 +165,7 @@ bugbee run "Hello world"
 
 ```json title="tui.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/tui.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/tui.json",
   "scroll_speed": 3,
   "scroll_acceleration": {
     "enabled": true
@@ -188,7 +188,7 @@ bugbee run "Hello world"
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "server": {
     "port": 4096,
     "hostname": "0.0.0.0",
@@ -217,7 +217,7 @@ bugbee run "Hello world"
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "tools": {
     "write": false,
     "bash": false
@@ -235,7 +235,7 @@ bugbee run "Hello world"
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "provider": {},
   "model": "anthropic/claude-sonnet-4-5",
   "small_model": "anthropic/claude-haiku-4-5"
@@ -248,7 +248,7 @@ bugbee run "Hello world"
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "provider": {
     "anthropic": {
       "options": {
@@ -277,7 +277,7 @@ Amazon Bedrock รองรับ AWS-การกำหนดค่าเฉพ
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "provider": {
     "amazon-bedrock": {
       "options": {
@@ -308,7 +308,7 @@ Bearer Token (`AWS_BEARER_TOKEN_BEDROCK` หรือ `/connect`) มีคว�
 
 ```json title="tui.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/tui.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/tui.json",
   "theme": "tokyonight"
 }
 ```
@@ -323,7 +323,7 @@ Bearer Token (`AWS_BEARER_TOKEN_BEDROCK` หรือ `/connect`) มีคว�
 
 ```jsonc title="bugbee.jsonc"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "agent": {
     "code-reviewer": {
       "description": "Reviews code for best practices and potential issues",
@@ -349,7 +349,7 @@ Bearer Token (`AWS_BEARER_TOKEN_BEDROCK` หรือ `/connect`) มีคว�
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "default_agent": "plan"
 }
 ```
@@ -366,7 +366,7 @@ Bearer Token (`AWS_BEARER_TOKEN_BEDROCK` หรือ `/connect`) มีคว�
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "share": "manual"
 }
 ```
@@ -387,7 +387,7 @@ Bearer Token (`AWS_BEARER_TOKEN_BEDROCK` หรือ `/connect`) มีคว�
 
 ```jsonc title="bugbee.jsonc"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "command": {
     "test": {
       "template": "Run the full test suite with coverage report and show any failures.\nFocus on the failing tests and suggest fixes.",
@@ -413,7 +413,7 @@ Bearer Token (`AWS_BEARER_TOKEN_BEDROCK` หรือ `/connect`) มีคว�
 
 ```json title="tui.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/tui.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/tui.json",
   "keybinds": {}
 }
 ```
@@ -428,7 +428,7 @@ Bugbee จะดาวน์โหลดการอัปเดตใหม่�
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "autoupdate": false
 }
 ```
@@ -444,7 +444,7 @@ Bugbee จะดาวน์โหลดการอัปเดตใหม่�
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "formatter": {
     "prettier": {
       "disabled": true
@@ -472,7 +472,7 @@ Bugbee จะดาวน์โหลดการอัปเดตใหม่�
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "permission": {
     "edit": "ask",
     "bash": "ask"
@@ -490,7 +490,7 @@ Bugbee จะดาวน์โหลดการอัปเดตใหม่�
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "compaction": {
     "auto": true,
     "prune": false,
@@ -511,7 +511,7 @@ Bugbee จะดาวน์โหลดการอัปเดตใหม่�
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "watcher": {
     "ignore": ["node_modules/**", "dist/**", ".git/**"]
   }
@@ -528,7 +528,7 @@ Bugbee จะดาวน์โหลดการอัปเดตใหม่�
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "mcp": {}
 }
 ```
@@ -545,7 +545,7 @@ Bugbee จะดาวน์โหลดการอัปเดตใหม่�
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "plugin": ["bugbee-helicone-session", "@my-org/custom-plugin"]
 }
 ```
@@ -560,7 +560,7 @@ Bugbee จะดาวน์โหลดการอัปเดตใหม่�
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "instructions": ["CONTRIBUTING.md", "docs/guidelines.md", ".cursor/rules/*.md"]
 }
 ```
@@ -576,7 +576,7 @@ Bugbee จะดาวน์โหลดการอัปเดตใหม่�
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "disabled_providers": ["openai", "gemini"]
 }
 ```
@@ -599,7 +599,7 @@ Bugbee จะดาวน์โหลดการอัปเดตใหม่�
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "enabled_providers": ["anthropic", "openai"]
 }
 ```
@@ -620,7 +620,7 @@ Bugbee จะดาวน์โหลดการอัปเดตใหม่�
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "experimental": {}
 }
 ```
@@ -643,7 +643,7 @@ Bugbee จะดาวน์โหลดการอัปเดตใหม่�
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "model": "{env:BUGBEE_MODEL}",
   "provider": {
     "anthropic": {
@@ -666,7 +666,7 @@ Bugbee จะดาวน์โหลดการอัปเดตใหม่�
 
 ```json title="bugbee.json"
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/config.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",
   "instructions": ["./custom-instructions.md"],
   "provider": {
     "openai": {

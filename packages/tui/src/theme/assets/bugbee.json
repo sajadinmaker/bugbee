@@ -1,5 +1,5 @@
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/theme.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/theme.json",
   "defs": {
     "darkStep1": "#0c0b0a",
     "darkStep2": "#141210",

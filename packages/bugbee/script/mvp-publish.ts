@@ -110,9 +110,9 @@ await Bun.file(`./dist/${pkg.name}/package.json`).write(
       description: "Bugbee — open source AI coding agent",
       repository: {
         type: "git",
-        url: "https://github.com/neuralbroker/bugbee",
+        url: "https://github.com/sajadinmaker/bugbee",
       },
-      homepage: "https://github.com/neuralbroker/bugbee",
+      homepage: "https://github.com/sajadinmaker/bugbee",
       bin: {
         bugbee: `./bin/${pkg.name}.exe`,
       },

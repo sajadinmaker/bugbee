@@ -15,7 +15,7 @@ import {
   buttonText,
 } from "../styles"
 
-const CONSOLE_URL = "https://github.com/neuralbroker/bugbee/"
+const CONSOLE_URL = "https://github.com/sajadinmaker/bugbee/"
 
 interface InviteEmailProps {
   inviter: string

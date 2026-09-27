@@ -1,5 +1,5 @@
 {
-  "$schema": "https://github.com/neuralbroker/bugbee/tui.json",
+  "$schema": "https://github.com/sajadinmaker/bugbee/tui.json",
   "plugin": [
     [
       "./plugins/tui-smoke.tsx",

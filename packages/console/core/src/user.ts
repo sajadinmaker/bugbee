@@ -147,7 +147,7 @@ export namespace User {
             // @ts-ignore
             InviteEmail({
               inviter: emailInfo.inviterEmail,
-              assetsUrl: `https://github.com/neuralbroker/bugbee/email`,
+              assetsUrl: `https://github.com/sajadinmaker/bugbee/email`,
               workspaceID: workspaceID,
               workspaceName: emailInfo.workspaceName,
             }),

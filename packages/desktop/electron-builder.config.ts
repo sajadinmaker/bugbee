@@ -125,7 +125,7 @@ function getConfig() {
         appId,
         productName: "Bugbee Beta",
         protocols: { name: "Bugbee Beta", schemes: ["bugbee"] },
-        publish: { provider: "github", owner: "neuralbroker", repo: "bugbee-beta", channel: "latest" },
+        publish: { provider: "github", owner: "sajadinmaker", repo: "bugbee-beta", channel: "latest" },
         rpm: { packageName: "bugbee-beta" },
       }
     }
@@ -135,7 +135,7 @@ function getConfig() {
         appId,
         productName: "Bugbee",
         protocols: { name: "Bugbee", schemes: ["bugbee"] },
-        publish: { provider: "github", owner: "neuralbroker", repo: "bugbee", channel: "latest" },
+        publish: { provider: "github", owner: "sajadinmaker", repo: "bugbee", channel: "latest" },
         deb: { fpm: [legacyDesktopEntryFpm] },
         rpm: { packageName: "bugbee", fpm: [legacyDesktopEntryFpm] },
       }

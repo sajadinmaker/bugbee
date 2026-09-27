@@ -37,7 +37,7 @@ jobs:
 
       - name: Install bugbee
         if: steps.team-check.outputs.is_team != 'true'
-        run: curl -fsSL https://github.com/neuralbroker/bugbee/install | bash
+        run: curl -fsSL https://github.com/sajadinmaker/bugbee/install | bash
 
       - name: Build prompt
         if: steps.team-check.outputs.is_team != 'true'

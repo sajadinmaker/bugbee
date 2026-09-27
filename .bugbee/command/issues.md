@@ -3,7 +3,7 @@ description: "find issue(s) on github"
 model: bugbee/claude-haiku-4-5
 ---
 
-Search through existing issues in neuralbroker/bugbee using the gh cli to find issues matching this query:
+Search through existing issues in sajadinmaker/bugbee using the gh cli to find issues matching this query:
 
 $ARGUMENTS
 

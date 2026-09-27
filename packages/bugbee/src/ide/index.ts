@@ -37,7 +37,7 @@ export async function install(ide: (typeof SUPPORTED_IDES)[number]["name"]) {
   const cmd = SUPPORTED_IDES.find((i) => i.name === ide)?.cmd
   if (!cmd) throw new Error(`Unknown IDE: ${ide}`)
 
-  const p = await Process.run([cmd, "--install-extension", "neuralbroker.bugbee"], {
+  const p = await Process.run([cmd, "--install-extension", "sajadinmaker.bugbee"], {
     nothrow: true,
   })
   const stdout = p.stdout.toString()

@@ -38,13 +38,13 @@ import { McpBrowser } from "./browser"
 const DEFAULT_TIMEOUT = 30_000
 const CLIENT_OPTIONS = {
   capabilities: {
-    // https://github.com/neuralbroker/bugbee/issues/11948
+    // https://github.com/sajadinmaker/bugbee/issues/11948
     // sampling: {},
-    // https://github.com/neuralbroker/bugbee/issues/23066
+    // https://github.com/sajadinmaker/bugbee/issues/23066
     // elicitation: {},
-    // https://github.com/neuralbroker/bugbee/issues/2308
+    // https://github.com/sajadinmaker/bugbee/issues/2308
     roots: {},
-    // https://github.com/neuralbroker/bugbee/issues/28567
+    // https://github.com/sajadinmaker/bugbee/issues/28567
     // tasks: {},
   },
 } satisfies ClientOptions

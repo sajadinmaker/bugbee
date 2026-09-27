@@ -50,7 +50,7 @@ jobs:
 
       - name: Install Bugbee
         if: steps.changes.outputs.has_changes == 'true'
-        run: curl -fsSL https://github.com/neuralbroker/bugbee/install | bash
+        run: curl -fsSL https://github.com/sajadinmaker/bugbee/install | bash
 
       - name: Sync locale docs with Bugbee
         if: steps.changes.outputs.has_changes == 'true'

@@ -229,8 +229,8 @@ const layer = Layer.effect(
 
       yield* Effect.promise(() => resolveLoadedPlugins(data, options.path))
       if (!data.$schema) {
-        data.$schema = "https://github.com/neuralbroker/bugbee/config.json"
-        const updated = text.replace(/^\s*\{/, '{\n  "$schema": "https://github.com/neuralbroker/bugbee/config.json",')
+        data.$schema = "https://github.com/sajadinmaker/bugbee/config.json"
+        const updated = text.replace(/^\s*\{/, '{\n  "$schema": "https://github.com/sajadinmaker/bugbee/config.json",')
         yield* fs.writeFileString(options.path, updated).pipe(Effect.catch(() => Effect.void))
       }
       return data
@@ -251,7 +251,7 @@ const layer = Layer.effect(
         const file = globalConfigFile()
         if (!existsSync(file)) {
           yield* fs
-            .writeWithDirs(file, JSON.stringify({ $schema: "https://github.com/neuralbroker/bugbee/config.json" }, null, 2))
+            .writeWithDirs(file, JSON.stringify({ $schema: "https://github.com/sajadinmaker/bugbee/config.json" }, null, 2))
             .pipe(Effect.catch(() => Effect.void))
         }
       }
@@ -266,7 +266,7 @@ const layer = Layer.effect(
             .then(async (mod) => {
               const { provider, model, ...rest } = mod.default
               if (provider && model) result.model = `${provider}/${model}`
-              result["$schema"] = "https://github.com/neuralbroker/bugbee/config.json"
+              result["$schema"] = "https://github.com/sajadinmaker/bugbee/config.json"
               result = mergeConfig(result, rest)
               await fsNode.writeFile(path.join(Global.Path.config, "config.json"), JSON.stringify(result, null, 2))
               await fsNode.unlink(legacy)
@@ -380,7 +380,7 @@ const layer = Layer.effect(
                 })
               : {}
             const remoteConfig = mergeConfig(isRecord(wellknown.config) ? wellknown.config : {}, fetchedConfig)
-            if (!remoteConfig.$schema) remoteConfig.$schema = "https://github.com/neuralbroker/bugbee/config.json"
+            if (!remoteConfig.$schema) remoteConfig.$schema = "https://github.com/sajadinmaker/bugbee/config.json"
             const source = wellknownURL
             const next = yield* loadConfig(
               JSON.stringify(remoteConfig),

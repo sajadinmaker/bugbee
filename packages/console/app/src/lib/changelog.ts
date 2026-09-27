@@ -39,7 +39,7 @@ export type ChangelogData = {
 }
 
 export async function loadChangelog(): Promise<ChangelogData> {
-  const response = await fetch("https://api.github.com/repos/neuralbroker/bugbee/releases?per_page=20", {
+  const response = await fetch("https://api.github.com/repos/sajadinmaker/bugbee/releases?per_page=20", {
     headers: {
       Accept: "application/vnd.github.v3+json",
       "User-Agent": "Bugbee-Console",

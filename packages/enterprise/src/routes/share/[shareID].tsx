@@ -274,21 +274,21 @@ export default function () {
                         <div class="relative bg-background-stronger w-screen h-screen overflow-hidden flex flex-col">
                           <header class="h-12 px-6 py-2 flex items-center justify-between self-stretch bg-background-base border-b border-border-weak-base">
                             <div class="">
-                              <a href="https://github.com/neuralbroker/bugbee">
+                              <a href="https://github.com/sajadinmaker/bugbee">
                                 <Mark />
                               </a>
                             </div>
                             <div class="flex gap-3 items-center">
                               <IconButton
                                 as={"a"}
-                                href="https://github.com/neuralbroker/bugbee"
+                                href="https://github.com/sajadinmaker/bugbee"
                                 target="_blank"
                                 icon="github"
                                 variant="ghost"
                               />
                               <IconButton
                                 as={"a"}
-                                href="https://github.com/neuralbroker/bugbee/discord"
+                                href="https://github.com/sajadinmaker/bugbee/discord"
                                 target="_blank"
                                 icon="discord"
                                 variant="ghost"

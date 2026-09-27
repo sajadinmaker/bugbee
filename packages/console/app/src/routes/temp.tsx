@@ -161,10 +161,10 @@ export default function Home() {
             <a href="https://x.com/bugbee">{i18n.t("footer.x")}</a>
           </div>
           <div data-slot="cell">
-            <a href="https://github.com/neuralbroker/bugbee">{i18n.t("footer.github")}</a>
+            <a href="https://github.com/sajadinmaker/bugbee">{i18n.t("footer.github")}</a>
           </div>
           <div data-slot="cell">
-            <a href="https://github.com/neuralbroker/bugbee/discord">{i18n.t("footer.discord")}</a>
+            <a href="https://github.com/sajadinmaker/bugbee/discord">{i18n.t("footer.discord")}</a>
           </div>
         </footer>
       </div>

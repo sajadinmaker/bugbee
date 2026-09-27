@@ -375,7 +375,7 @@ function ApiMethod(props: ApiMethodProps) {
                 key.
               </text>
               <text fg={theme.text}>
-                Go to <span style={{ fg: theme.primary }}>https://github.com/neuralbroker/bugbee/zen</span> to get a key
+                Go to <span style={{ fg: theme.primary }}>https://github.com/sajadinmaker/bugbee/zen</span> to get a key
               </text>
             </box>
           ),
@@ -386,7 +386,7 @@ function ApiMethod(props: ApiMethodProps) {
                 with generous usage limits.
               </text>
               <text fg={theme.text}>
-                Go to <span style={{ fg: theme.primary }}>https://github.com/neuralbroker/bugbee/go</span> and enable Bugbee Go
+                Go to <span style={{ fg: theme.primary }}>https://github.com/sajadinmaker/bugbee/go</span> and enable Bugbee Go
               </text>
             </box>
           ),

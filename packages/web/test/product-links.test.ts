@@ -7,7 +7,7 @@ test("documentation auth links use the canonical Bugbee product URL", async () =
   const invalid = await Promise.all(
     files.map(async (file) => {
       const content = await Bun.file(file).text()
-      return content.includes("bugbee.dev/auth](https://github.com/neuralbroker/bugbee/") ? file : undefined
+      return content.includes("bugbee.dev/auth](https://github.com/sajadinmaker/bugbee/") ? file : undefined
     }),
   ).then((items) => items.filter((item): item is string => item !== undefined))
 

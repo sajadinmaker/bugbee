@@ -5,8 +5,8 @@ export default {
   console: stage === "production" ? "https://bugbee.dev/auth" : `https://${stage}.bugbee.ai/auth`,
   email: "help@anoma.ly",
   socialCard: "https://social-cards.sst.dev",
-  github: "https://github.com/neuralbroker/bugbee",
-  discord: "https://github.com/neuralbroker/bugbee/discord",
+  github: "https://github.com/sajadinmaker/bugbee",
+  discord: "https://github.com/sajadinmaker/bugbee/discord",
   headerLinks: [
     { name: "app.header.home", url: "/" },
     { name: "app.header.docs", url: "/docs/" },

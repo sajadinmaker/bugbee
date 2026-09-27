@@ -1,6 +1,6 @@
 # bugbee GitHub Action
 
-A GitHub Action that integrates [bugbee](https://github.com/neuralbroker/bugbee) directly into your GitHub workflow.
+A GitHub Action that integrates [bugbee](https://github.com/sajadinmaker/bugbee) directly into your GitHub workflow.
 
 Mention `/bugbee` in your comment, and bugbee will execute tasks within your GitHub Actions runner.
 
@@ -88,7 +88,7 @@ This will walk you through installing the GitHub app, creating the workflow, and
               persist-credentials: false
 
           - name: Run bugbee
-           uses: neuralbroker/bugbee/github@latest
+           uses: sajadinmaker/bugbee/github@latest
            env:
              ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -101,7 +101,7 @@ This will walk you through installing the GitHub app, creating the workflow, and
 
 ## Support
 
-This is an early release. If you encounter issues or have feedback, please create an issue at https://github.com/neuralbroker/bugbee/issues.
+This is an early release. If you encounter issues or have feedback, please create an issue at https://github.com/sajadinmaker/bugbee/issues.
 
 ## Development
 

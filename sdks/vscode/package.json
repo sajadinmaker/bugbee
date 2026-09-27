@@ -3,10 +3,10 @@
   "displayName": "bugbee",
   "description": "bugbee for VS Code",
   "version": "1.18.4",
-  "publisher": "neuralbroker",
+  "publisher": "sajadinmaker",
   "repository": {
     "type": "git",
-    "url": "https://github.com/neuralbroker/bugbee"
+    "url": "https://github.com/sajadinmaker/bugbee"
   },
   "license": "MIT",
   "icon": "images/icon.png",

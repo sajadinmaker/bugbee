@@ -21,10 +21,10 @@ afterEach(() => {
 describe("resource", () => {
   test("parses and decodes OTEL resource attributes", () => {
     process.env.OTEL_RESOURCE_ATTRIBUTES =
-      "service.namespace=neuralbroker,team=platform%2Cobservability,label=hello%3Dworld,key%2Fname=value%20here"
+      "service.namespace=sajadinmaker,team=platform%2Cobservability,label=hello%3Dworld,key%2Fname=value%20here"
 
     expect(resource().attributes).toMatchObject({
-      "service.namespace": "neuralbroker",
+      "service.namespace": "sajadinmaker",
       team: "platform,observability",
       label: "hello=world",
       "key/name": "value here",
@@ -32,7 +32,7 @@ describe("resource", () => {
   })
 
   test("drops OTEL resource attributes when any entry is invalid", () => {
-    process.env.OTEL_RESOURCE_ATTRIBUTES = "service.namespace=neuralbroker,broken"
+    process.env.OTEL_RESOURCE_ATTRIBUTES = "service.namespace=sajadinmaker,broken"
 
     expect(resource().attributes["service.namespace"]).toBeUndefined()
     expect(resource().attributes["bugbee.client"]).toBeDefined()
@@ -41,11 +41,11 @@ describe("resource", () => {
   test("keeps built-in attributes when env values conflict", () => {
     process.env.BUGBEE_CLIENT = "cli"
     process.env.OTEL_RESOURCE_ATTRIBUTES =
-      "bugbee.client=web,service.instance.id=override,service.namespace=neuralbroker"
+      "bugbee.client=web,service.instance.id=override,service.namespace=sajadinmaker"
 
     expect(resource().attributes).toMatchObject({
       "bugbee.client": "cli",
-      "service.namespace": "neuralbroker",
+      "service.namespace": "sajadinmaker",
     })
     expect(resource().attributes["service.instance.id"]).not.toBe("override")
     expect(resource().attributes["bugbee.run"]).toMatch(/^[0-9a-f]{8}$/)

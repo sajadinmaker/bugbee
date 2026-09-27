@@ -240,7 +240,7 @@ describe("SessionStatus.Info", () => {
         title: "Free limit reached",
         message: "Subscribe to Bugbee Go.",
         label: "subscribe",
-        link: "https://github.com/neuralbroker/bugbee/go",
+        link: "https://github.com/sajadinmaker/bugbee/go",
       },
       next: 500,
     }

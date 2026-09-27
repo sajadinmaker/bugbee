@@ -33607,9 +33607,9 @@
     "id": "bugbee-go",
     "env": ["BUGBEE_API_KEY"],
     "npm": "@ai-sdk/openai-compatible",
-    "api": "https://github.com/neuralbroker/bugbee/zen/go/v1",
+    "api": "https://github.com/sajadinmaker/bugbee/zen/go/v1",
     "name": "Bugbee Go",
-    "doc": "https://github.com/neuralbroker/bugbee/docs/zen",
+    "doc": "https://github.com/sajadinmaker/bugbee/docs/zen",
     "models": {
       "deepseek-v4-flash": {
         "id": "deepseek-v4-flash",
@@ -90323,9 +90323,9 @@
     "id": "bugbee",
     "env": ["BUGBEE_API_KEY"],
     "npm": "@ai-sdk/openai-compatible",
-    "api": "https://github.com/neuralbroker/bugbee/zen/v1",
+    "api": "https://github.com/sajadinmaker/bugbee/zen/v1",
     "name": "Bugbee Zen",
-    "doc": "https://github.com/neuralbroker/bugbee/docs/zen",
+    "doc": "https://github.com/sajadinmaker/bugbee/docs/zen",
     "models": {
       "ring-2.6-1t-free": {
         "id": "ring-2.6-1t-free",

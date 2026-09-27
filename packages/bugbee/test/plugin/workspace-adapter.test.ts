@@ -74,7 +74,7 @@ describe("plugin.workspace", () => {
           path.join(dir, "bugbee.json"),
           JSON.stringify(
             {
-              $schema: "https://github.com/neuralbroker/bugbee/config.json",
+              $schema: "https://github.com/sajadinmaker/bugbee/config.json",
               plugin: [pathToFileURL(file).href],
             },
             null,

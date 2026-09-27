@@ -819,7 +819,7 @@ function App(props: { onSnapshot?: () => Promise<string[]>; pluginHost: TuiPlugi
         name: "docs.open",
         title: "Open docs",
         run: () => {
-          open("https://github.com/neuralbroker/bugbee/docs").catch(() => {})
+          open("https://github.com/sajadinmaker/bugbee/docs").catch(() => {})
           dialog.clear()
         },
         category: "System",

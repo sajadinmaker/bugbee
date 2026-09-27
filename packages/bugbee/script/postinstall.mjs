@@ -220,7 +220,7 @@ async function installFromGitHubRelease() {
   const temp = fs.mkdtempSync(path.join(os.tmpdir(), "bugbee-release-"))
   try {
     for (const asset of releaseAssets()) {
-      const url = `https://github.com/neuralbroker/bugbee/releases/download/v${releaseVersion}/${asset}`
+      const url = `https://github.com/sajadinmaker/bugbee/releases/download/v${releaseVersion}/${asset}`
       const archive = path.join(temp, asset)
       try {
         await fetchFollow(url, archive)
@@ -271,7 +271,7 @@ async function main() {
 
   throw new Error(
     `Failed to install the Bugbee binary for ${platform}/${arch}. ` +
-      `Try: curl -fsSL https://github.com/neuralbroker/bugbee/install | bash ` +
+      `Try: curl -fsSL https://github.com/sajadinmaker/bugbee/install | bash ` +
       `or manually install one of: ${packageNames().map((name) => JSON.stringify(name)).join(", ")}.`,
   )
 }

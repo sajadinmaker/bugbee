@@ -7,11 +7,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neuralbroker/bugbee.git",
+    "url": "git+https://github.com/sajadinmaker/bugbee.git",
     "directory": "packages/http-recorder"
   },
-  "homepage": "https://github.com/neuralbroker/bugbee/tree/dev/packages/http-recorder",
-  "bugs": "https://github.com/neuralbroker/bugbee/issues",
+  "homepage": "https://github.com/sajadinmaker/bugbee/tree/dev/packages/http-recorder",
+  "bugs": "https://github.com/sajadinmaker/bugbee/issues",
   "keywords": [
     "effect",
     "http",

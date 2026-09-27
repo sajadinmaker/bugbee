@@ -38,7 +38,7 @@ jobs:
 
       - name: Install bugbee
         if: steps.author.outputs.skip != 'true'
-        run: curl -fsSL https://github.com/neuralbroker/bugbee/install | bash
+        run: curl -fsSL https://github.com/sajadinmaker/bugbee/install | bash
 
       - name: Check duplicates and compliance
         if: steps.author.outputs.skip != 'true'
@@ -172,7 +172,7 @@ jobs:
 
       - name: Install bugbee
         if: steps.author.outputs.skip != 'true'
-        run: curl -fsSL https://github.com/neuralbroker/bugbee/install | bash
+        run: curl -fsSL https://github.com/sajadinmaker/bugbee/install | bash
 
       - name: Recheck compliance
         if: steps.author.outputs.skip != 'true'

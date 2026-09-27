@@ -3,7 +3,7 @@
 #
 # Setup (once):
 #   1. npm account + Automation token
-#   2. gh secret set NPM_TOKEN -R neuralbroker/bugbee
+#   2. gh secret set NPM_TOKEN -R sajadinmaker/bugbee
 #
 # Cut a release:
 #   gh workflow run release-cli.yml -f version=1.0.0
@@ -40,7 +40,7 @@ permissions:
 
 jobs:
   release:
-    if: github.repository == 'neuralbroker/bugbee'
+    if: github.repository == 'sajadinmaker/bugbee'
     runs-on: ubuntu-latest
     timeout-minutes: 180
     steps:
@@ -92,7 +92,7 @@ jobs:
 
           Install:
           \`\`\`bash
-          curl -fsSL https://github.com/neuralbroker/bugbee/install | bash
+          curl -fsSL https://github.com/sajadinmaker/bugbee/install | bash
           # or
           npm install -g @neuralbroker/bugbee@${{ inputs.version }}
           \`\`\`"
@@ -153,4 +153,4 @@ jobs:
           if [ "${{ inputs.skip_npm }}" != "true" ]; then
             echo "- npm: \`npm install -g @neuralbroker/bugbee@${{ inputs.version }}\`" >> "$GITHUB_STEP_SUMMARY"
           fi
-          echo "- curl: \`curl -fsSL https://github.com/neuralbroker/bugbee/install | bash\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- curl: \`curl -fsSL https://github.com/sajadinmaker/bugbee/install | bash\`" >> "$GITHUB_STEP_SUMMARY"

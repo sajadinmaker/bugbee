@@ -96,7 +96,7 @@ export async function tmpdir<T>(options?: TmpDirOptions<T>) {
     await Bun.write(
       path.join(dirpath, "bugbee.json"),
       JSON.stringify({
-        $schema: "https://github.com/neuralbroker/bugbee/config.json",
+        $schema: "https://github.com/sajadinmaker/bugbee/config.json",
         ...options.config,
       }),
     )
@@ -154,7 +154,7 @@ export function tmpdirScoped<E = never, R = never>(options?: {
       yield* Effect.promise(() =>
         fs.writeFile(
           path.join(dir, "bugbee.json"),
-          JSON.stringify({ $schema: "https://github.com/neuralbroker/bugbee/config.json", ...resolved }),
+          JSON.stringify({ $schema: "https://github.com/sajadinmaker/bugbee/config.json", ...resolved }),
         ),
       )
     }

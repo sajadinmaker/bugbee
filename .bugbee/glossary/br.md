@@ -2,7 +2,7 @@
 
 ## Sources
 
-- PR #10086: https://github.com/neuralbroker/bugbee/pull/10086
+- PR #10086: https://github.com/sajadinmaker/bugbee/pull/10086
 
 ## Do Not Translate (Locale Additions)
 

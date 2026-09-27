@@ -41,7 +41,7 @@ function withProject<A, E, R>(source: string, self: Effect.Effect<A, E, R>) {
             path.join(test.directory, "bugbee.json"),
             JSON.stringify(
               {
-                $schema: "https://github.com/neuralbroker/bugbee/config.json",
+                $schema: "https://github.com/sajadinmaker/bugbee/config.json",
                 plugin: [pathToFileURL(file).href],
               },
               null,

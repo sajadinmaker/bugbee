@@ -1276,7 +1276,7 @@ it.instance(
   Effect.gen(function* () {
     const providers = yield* list
     expect(providers[ProviderV2.ID.make("nvidia")].options.headers).toEqual({
-      "HTTP-Referer": "https://github.com/neuralbroker/bugbee/",
+      "HTTP-Referer": "https://github.com/sajadinmaker/bugbee/",
       "X-Title": "bugbee",
       "X-BILLING-INVOKE-ORIGIN": "Bugbee",
     })
@@ -1289,7 +1289,7 @@ it.instance(
   Effect.gen(function* () {
     const providers = yield* list
     expect(providers[ProviderV2.ID.make("nvidia")].options.headers).toEqual({
-      "HTTP-Referer": "https://github.com/neuralbroker/bugbee/",
+      "HTTP-Referer": "https://github.com/sajadinmaker/bugbee/",
       "X-Title": "bugbee",
       "X-BILLING-INVOKE-ORIGIN": "Bugbee",
     })

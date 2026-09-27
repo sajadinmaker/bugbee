@@ -32,7 +32,7 @@ jobs:
       - uses: ./.github/actions/setup-bun
 
       - name: Install bugbee
-        run: curl -fsSL https://github.com/neuralbroker/bugbee/install | bash
+        run: curl -fsSL https://github.com/sajadinmaker/bugbee/install | bash
 
       - name: Get PR details
         id: pr-details

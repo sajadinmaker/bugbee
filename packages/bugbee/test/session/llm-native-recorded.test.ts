@@ -291,7 +291,7 @@ const writeConfig = (directory: string, scenario: RecordedScenario, model: Model
   Effect.promise(() =>
     Bun.write(
       path.join(directory, "bugbee.json"),
-      JSON.stringify({ $schema: "https://github.com/neuralbroker/bugbee/config.json", ...scenario.config(model) }),
+      JSON.stringify({ $schema: "https://github.com/sajadinmaker/bugbee/config.json", ...scenario.config(model) }),
     ),
   )
 
